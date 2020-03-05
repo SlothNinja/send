@@ -4,6 +4,7 @@ import (
 	"github.com/SlothNinja/codec"
 	"github.com/SlothNinja/log"
 	"github.com/gin-gonic/gin"
+	"google.golang.org/appengine"
 	"google.golang.org/appengine/mail"
 	"google.golang.org/appengine/taskqueue"
 )
@@ -66,7 +67,7 @@ func Message(c *gin.Context, ms ...*mail.Message) error {
 		ts[i].Payload = encoded
 	}
 
-	_, err := taskqueue.AddMulti(c, ts, "mail")
+	_, err := taskqueue.AddMulti(appengine.NewContext(c.Request), ts, "mail")
 	return err
 }
 

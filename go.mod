@@ -1,15 +1,17 @@
 module github.com/SlothNinja/send
 
+go 1.14
+
 require (
-	github.com/SlothNinja/log v0.0.2
-	github.com/gin-gonic/gin v1.6.2
-	github.com/golang/protobuf v1.3.5 // indirect
-	github.com/kr/text v0.2.0 // indirect
-	github.com/mailjet/mailjet-apiv3-go v0.0.0-20190724151621-55e56f74078c
-	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
-	github.com/modern-go/reflect2 v1.0.1 // indirect
-	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
-	github.com/stretchr/testify v1.5.1 // indirect
-	golang.org/x/sys v0.0.0-20200409092240-59c9f1ba88fa // indirect
-	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
+	cloud.google.com/go v0.76.0 // indirect
+	cloud.google.com/go/logging v1.2.0 // indirect
+	cloud.google.com/go/storage v1.13.0 // indirect
+	github.com/SlothNinja/log v1.0.2
+	github.com/SlothNinja/sn v1.0.3
+	github.com/mailjet/mailjet-apiv3-go v0.0.0-20201009050126-c24bc15a9394
+	github.com/ugorji/go v1.2.4 // indirect
+	go.opencensus.io v0.22.6 // indirect
+	golang.org/x/oauth2 v0.0.0-20210210192628-66670185b0cd // indirect
+	google.golang.org/api v0.40.0 // indirect
+	google.golang.org/genproto v0.0.0-20210212180131-e7f2df4ecc2d // indirect
 )
